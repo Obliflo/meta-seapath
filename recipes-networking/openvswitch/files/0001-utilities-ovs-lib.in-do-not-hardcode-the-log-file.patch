@@ -9,6 +9,8 @@ Content-Transfer-Encoding: 8bit
 Remove the hardcoded log file inside ovs-lib to allow changing
 the log file.
 
+Upstream-Status: Inappropriate [SEAPATH specific]
+
 Signed-off-by: Mathieu Dupré <mathieu.dupre@savoirfairelinux.com>
 ---
  utilities/ovs-lib.in | 4 ----

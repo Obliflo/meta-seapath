@@ -107,3 +107,5 @@ USERADD_GID_TABLES = "conf/distro/include/group.gid"
 
 # Use the cephadm recipe as cephadm provider to have the latest version
 PREFERRED_RPROVIDER_cephadm = "cephadm"
+
+PREFERRED_VERSION_boost = "1.84.0"

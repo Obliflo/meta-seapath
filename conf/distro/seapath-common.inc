@@ -78,8 +78,6 @@ DISTRO_FEATURES:append = " seapath-clustering"
 # Enable Cockpit Web UI if defined in seapath.conf
 DISTRO_FEATURES:append = "${@bb.utils.contains('SEAPATH_COCKPIT', 'true', ' seapath-cockpit', '', d)}"
 
-# Set persistent /var/log
-VOLATILE_LOG_DIR = "no"
 
 #Inherit all bbclass that will check DISTRO_FEATURES
 INHERIT += "security/hardening"

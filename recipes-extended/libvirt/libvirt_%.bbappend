@@ -17,6 +17,7 @@ SRC_URI += " \
     file://libvirtd.conf \
     file://libvirtd.service.fragment \
     file://qemu.conf \
+    file://0001-remote-move-secrets-encryption-dependency-to-a-systemd-drop-in.patch \
 "
 
 do_install:append() {
@@ -42,6 +43,8 @@ FILES:${PN} += " \
     ${sysconfdir}/libvirt/qemu.conf \
     ${systemd_system_unitdir}/libvirtd.service.d/hardening.conf \
 "
+
+EXTRA_OEMESON += "-Ddriver_secrets=disabled"
 
 CVE_STATUS[CVE-2014-8135] = "fixed-version: in 1.2.11"
 CVE_STATUS[CVE-2014-8136] = "fixed-version: in 1.2.11"

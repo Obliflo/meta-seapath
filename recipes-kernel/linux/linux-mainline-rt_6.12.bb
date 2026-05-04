@@ -38,4 +38,4 @@ SRC_URI:append:seapath-installer = " file://exfat.cfg"
 
 # Uncomment this line to enable debug traces in Kernel and tracing tools
 # support (like LTTng or perf).
-#SRC_URI:append = " file://traces.cfg"
+SRC_URI:append = " file://traces.cfg"

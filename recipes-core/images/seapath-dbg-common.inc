@@ -13,7 +13,7 @@ IMAGE_INSTALL += "tcpdump inetutils-ping inetutils-ping6"
 # Uncomment this line to install LTTng.
 # LTTng require the kernel fragment trace.cfg
 # See recipes-kernel/linux/linux-mainline-rt_5.15.bb
-#IMAGE_INSTALL += " lttng-tools lttng-modules"
+IMAGE_INSTALL += " lttng-tools lttng-modules"
 
 # System tools
 IMAGE_FEATURES += "allow-empty-password allow-root-login \
